@@ -6,7 +6,14 @@ export default function TodoList ({todos, deleteTodo,toggleTodo,editTodo}) {
         
             <ul className="list-reset">
                 {
-                    todos.map((todo,index)=>  <TodoListItem key={index} todo={todo} deleteTodo={deleteTodo} toggleTodo={toggleTodo} editTodo={editTodo} />)
+                    todos.map((todo,index)=>
+                        <TodoListItem key={index}
+                        todo={todo}
+                        deleteTodo={deleteTodo}
+                        toggleTodo={toggleTodo}
+                        editTodo={editTodo}
+                         />
+                    )
                 }
             </ul>
 
